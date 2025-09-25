@@ -28,3 +28,10 @@ console.log(result);
 
 // console.log(result);
 // { name: 'Sophia', salary: 115000 }
+
+// try {
+//   throw "my error";
+// }
+// catch(e) {
+//   console.log(e);
+// }

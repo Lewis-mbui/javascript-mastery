@@ -49,3 +49,6 @@ const book5 = new Book(`All The Sinners Bleed`, `S.A. Cosby`, '2025');
 const myBooks = [book1, book2, book3, book4];
 
 const myLib = new Library(myBooks);
+
+const searchedBook = myLib.findBookByTitle('The Great Gatsby');
+console.log(searchedBook.getSummary());
