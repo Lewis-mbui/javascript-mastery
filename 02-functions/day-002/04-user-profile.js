@@ -12,7 +12,7 @@
 
 const user = { 
   name: "Alice", 
-  age: 25, 
+  age: 24, 
   hobbies: ["reading"]
 };
 
