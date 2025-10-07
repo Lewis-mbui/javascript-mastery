@@ -29,6 +29,8 @@ class Rectangle {
 class Circle extends Rectangle {
   constructor (radius) {
     super();
+    delete this.height;
+    delete this.width;
     this.radius = radius;
   }
 
