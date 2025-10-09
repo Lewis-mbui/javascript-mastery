@@ -10,7 +10,7 @@
 
 
 // Create a WeakMap to hold private passwords
-const _password = new WeakMap();
+const _passwords = new WeakMap();
 
 class User {
   constructor(username, password) {
@@ -19,7 +19,7 @@ class User {
     }
 
     this.username = username;
-    _password.set(this, password); // store password privately
+    _passwords.set(this, password); // store password privately
   }
 
   // Setter for updating password
@@ -28,7 +28,7 @@ class User {
       console.log("Password must be at least 6 characters long.");
       return;
     }
-    _password.set(this, newPassword);
+    _passwords.set(this, newPassword);
   }
 
   // Getter (restricted)
@@ -39,7 +39,7 @@ class User {
 
   // Method to verify a login attempt
   checkPassword(input) {
-    return _password.get(this) === input;
+    return _passwords.get(this) === input;
   }
 }
 
