@@ -19,3 +19,4 @@ userProfile.address.city = 'Nyeri';
 console.log(userProfile);
 userProfile.address.country = 'Kenya';
 // console.log(userProfile);
+userProfile.occupation = 'doctor';
